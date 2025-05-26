@@ -10,9 +10,7 @@ public class Ropa extends Producto {
     }
 
     @Override
-    public void calcularPrecioFinal() {
-        System.out.println("\nArticulo: " + super.getNombre()
-                + "\nMarca: " + super.getMarca()
-                + "\nPrecio final(+IVA:21% -5% OFF): " + (super.getPrecioBase() * 1.21) * 0.95);
+    public double calcularPrecioFinal() {
+        return super.getPrecioBase() * 0.95;
     }
 }

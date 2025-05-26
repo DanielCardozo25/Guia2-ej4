@@ -23,10 +23,11 @@ public class Producto implements Vendible {
     public String getMarca() {
         return marca;
     }
-    
+
     @Override
-    public void calcularPrecioFinal() {
-        
+    public double calcularPrecioFinal() {
+
+        return 0;
     }
-    
+
 }
